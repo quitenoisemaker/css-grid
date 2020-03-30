@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Css grid</title>
+
+	<style type="text/css">
+		body{
+			color: #fff;
+			font-family: 'Nunito Semibold';
+			text-align: center;
+		}
+
+		#content{
+
+			display: grid;
+
+			/*grid-template-columns: 20% 30% 50%;*/
+			/*grid-template-columns: 1fr 3fr 1fr;*/
+			grid-template-columns: repeat(3, 1fr);
+			grid-auto-rows: minmax(200px, auto); /* means the minimum weight when there is no writeup is 200px and when there is writeup, the weight should be automatic    */
+
+			grid-gap: 10px;
+	 		max-width: 960px;
+			margin: 0 auto;
+		}
+		#content div{
+			background: #3bbced;
+			padding: 30px;
+			
+		}
+
+		#content div:nth-child(even){
+			background: #777;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="content">
+		<div>1</div>
+		<div>2</div>
+		<div>
+			I’m Sammy,
+
+			a graduate of Computer Science and a Digital Marketer. I’m skilled in HTML, CSS, BOOTSTRAP, Javascript, PHP, WORDPRESS, LARAVEL and VueJs (in view). I also enjoy making CorelDraw Designs, WHITEBOARD ANIMATION, FACEBOOK MARKETING Ads and WEBSITE/BLOG content. I have worked on several projects with impressive success rates. I speak and write in English fluently.
+		</div>
+		<div>4</div>
+		<div>5</div>
+		<div>6</div>
+		<div>7</div>
+		<div>8</div>
+		<div>9</div>
+	</div>
+
+</body>
+</html>
